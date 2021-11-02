@@ -1,0 +1,84 @@
+/*importing fonts for CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+.header{
+    background-image: url("../static/header.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    /* font-family: 'Zen Maru Gothic', sans-serif !important; */
+    /* position: sticky;
+    top: 0;*/
+} 
+
+#headingMain{
+    font-size: 5rem;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    text-shadow:rgb(0, 0, 0) 2px 2px 3px;
+}
+
+#headingSecondary{
+    font-size: 1.25rem;
+    margin: 15px;
+    text-align: center;
+    color: white;
+    text-shadow:rgb(0, 0, 0) 2px 2px 3px;
+
+}
+
+.content{
+    padding: 40px;
+    font-family: 'PT Sans', sans-serif !important;
+    width: 100vw;
+       
+}
+
+/* .content::before{
+    background-image: url(../static/bg_content.png);
+    opacity: 0.5;
+    background-size: cover;
+} */
+
+#content_heading{
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.sponsors{
+    background-color: #d9f5a0;
+    padding: 40px;
+    width: 100vw;
+
+}
+
+#sponsor_heading{
+    font-family: 'Zen Maru Gothic', sans-serif !important;
+    font-size: 3rem;
+}
+
+.sponsor_content{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.spics{
+    margin: 20px 0px;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(3,1fr);
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+}

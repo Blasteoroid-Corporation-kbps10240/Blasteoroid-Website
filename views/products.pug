@@ -1,0 +1,14 @@
+extends base.pug
+block title 
+    |Blasteoroid - Products 
+block style 
+    link(rel="stylesheet",href="../static/style3.css")
+block div
+    div.header
+        h1#headingMain Our Products
+        //- h5#headingSecondary Have a query or suggestion? Feel free to contact us using the form given below. We'd love to hear from you.
+    div.content 
+        h3.productname Blasteoroid PassVault 
+        a(href="../static/passvault screenshot.png") #[img(src="../static/passvault screenshot.png", alt="PassVault Image", width= "90%", height= "56.25%", class="prodimg")]
+        p.desc Blasteoroid PassVault is a cross platform device independent standalone credential manager that makes it really easy to store all of your online and offline passwords locally and uses cutting edge encryption algorithms to make sure your passwords are always protected. We provide you with state of the art technologies at minimal cost. PassVault protects your passwords from outside attacks and enables you to have peace of mind with your login credentials. The PassVault team also releases regular updates to its users fixing any bugs or issues found in the software.
+        a(href="/passvault", style="width: 25%;") #[p.button Get PassVault Now] 

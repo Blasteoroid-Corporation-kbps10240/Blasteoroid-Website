@@ -1,0 +1,134 @@
+/* importing fonts for CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width: 100vw !important; */
+  
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #2b0a4a;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  font-family: 'Roboto', sans-serif !important;
+  z-index: 7;
+}
+
+.items {
+  list-style: none;
+  margin: 0 10px;
+  padding: 17px 10px;
+  font-size: 20px;
+}
+
+.itemsh{
+  list-style: none;
+  margin: 0 10px;
+  padding: 17px 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+}
+
+.items2 {
+  list-style: none;
+  margin: auto 0;
+  /* margin-right: 30px !important; */
+  position: absolute;
+  right: 5%;
+  /* justify-self: flex-end; */
+  font-size: 20px;
+  align-self: center;
+}
+
+@media all and (min-width: 1357px) {
+  .items3 {
+    list-style: none;
+    margin: auto;
+    /* margin-right: 30px !important; */
+    position: absolute;
+    right: 11%;
+    align-self: flex-end;
+    font-size: 20px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width:1356px) and (min-width:1110px){
+    .items3 {
+        list-style: none;
+        margin: auto;
+        /* margin-right: 30px !important; */
+        position: absolute;
+        right: 12%;
+        align-self: flex-end;
+        font-size: 20px;
+        align-self: center;
+      }
+}
+
+@media screen and (max-width:1110px) and (min-width:300px){
+    .items3 {
+        list-style: none;
+        margin: auto;
+        /* margin-right: 30px !important; */
+        position: absolute;
+        right: 13%;
+        align-self: flex-end;
+        font-size: 20px;
+        align-self: center;
+      }
+}
+
+.btn {
+  padding: 10px 10px;
+  background-color: #9b58d9;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.10rem;
+  cursor: pointer;
+    /* align-self: center;
+    justify-self: center; */
+}
+
+.btn:hover{
+    padding: 11.5px;
+    background-color: rgb(95, 26, 160);
+}
+
+.items a {
+  text-decoration: none;
+  color: white;
+}
+
+.items:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.footer{
+    background-color: #2b0a4a;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif !important;
+    width: 100vw;
+
+}
+
+.footer p a{
+    text-decoration: none;
+    color: white;
+    
+}

@@ -1,0 +1,27 @@
+extends base.pug
+block title 
+    |Blasteoroid - Contact Us 
+block style 
+    link(rel="stylesheet",href="../static/style2.css")
+block div   
+    div.header 
+        h1#headingMain Contact Form 
+        h5#headingSecondary Have a query or suggestion? Feel free to contact us using the form given below. We'd love to hear from you.
+    div.content 
+        p#formality Required fields are marked by *
+        form(method="post").form
+            label(for="name",class="mgnup") Your Name* : 
+            input(type="text", name="name", class="mgndwn")  
+            label(for="org",class="mgnup") Enter Your Organization : 
+            input(type="text", name="org", class="mgndwn")  
+            label(for="email") Your Email Id* (for furthur communication) : 
+            input(type="email", name="email", class="mgndwn")  
+            label(for="Country",class="mgnup") Country* : 
+            input(type="text", name="country", class="mgndwn")  
+            label(for="phone",class="mgnup") Phone Number : 
+            input(type="number", name="phn", class="mgndwn")  
+            label(for="subject",class="mgnup") Enter your subject of query or suggestion* : 
+            input(type="text", name="subj", class="mgndwn")  
+            label(for="comments",class="mgnup") Enter your comments* :
+            textarea(name="comments", cols="60", rows="20", placeholder="Enter your comments here", class="txtarea") 
+            button.btn.btn1 Submit

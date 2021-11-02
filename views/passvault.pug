@@ -1,0 +1,146 @@
+extends base.pug
+block title 
+    |PassVault 
+block style 
+    //- link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", rel="stylesheet",integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3", crossorigin="anonymous")
+    link(href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css", rel="stylesheet")
+    link(rel="stylesheet",href="../static/style4.css")
+block div
+    div.header 
+        p#headingMain #[img(src="../static/Icon1.png", style="display: inline")] PassVault By Blasteoroid
+        p#headingSecondary Enpowering millions of users to store their logins in the most secure way ever possible.
+        
+    div.content 
+        p.data Pass Vault is a password management program / system that works using Microsoft DotNET Framework 4.8. PassVault uses system generated hash and clock for random cryptography. The US certified AES or Advanced Encryption System as the best way of encrypting passwords. PassVault uses such AES techniques and special algos for encrypting and storing user passwords. PassVault's AI can switch between these 3 encrypion algos depending on the user password strength. It uses Windows DPAPI to store the encrypion keys securely in your OS. 
+        p.data Currently we are the only one who can claim to have the password manager that have complete local storage of password so that there is no chance of any data breaches from any server, and the risk of interception or hijacking of your connection done by hackers while connectiong to online password manager which gives them complete access of data.
+        p.data PassVault was made by Blasteoroid keeping in mind the needs of changing times. We have made PassVault completely cross platform, independant of any influence of external softwares like antiviruses or third party programs, and a completely standalone runtime which gives consistent performance accorss a wide range of tested hardware. It has a very user friendly and intuitive UI, and can be used by users with any level of experience with computers.
+        p.data PassVault has a strong developer support, and it recives quality updates frquently which enhances its features and performance and reemoves any existing bugs present.
+        p.data For furthur reading or reference, you can refer our #[a(href="https://blasteoroid-corporation-kbps10240.github.io/Pass-Vault/release-notes/Pass%20Vault%2021H2.html") Official Release Notes ]here.
+        p.data To use PassVault yourself, see our pricing options: 
+        section.text-gray-600.body-font.overflow-hidden.container.px-5.py-24.mx-auto.flex.flex-col.text-center.w-full
+          h1.text-3xl.font-medium.title-font.mb-2.text-gray-900(class='sm:text-4xl') Pricing
+          p.mx-auto.leading-relaxed.text-base.text-gray-500(class='lg:w-2/3') See our amazing pricing options for all kinds of users
+          .flex.mx-auto.border-2.border-indigo-500.rounded.overflow-hidden.mt-6
+            button.py-1.px-4.bg-indigo-500.text-white(class='focus:outline-none') Monthly
+            //- button.py-1.px-4(class='focus:outline-none') Annually
+        .flex.flex-wrap.-m-4
+          .p-4.w-full(class='xl:w-1/4 md:w-1/2')
+            .h-full.p-6.rounded-lg.border-2.border-gray-300.flex.flex-col.relative.overflow-hidden
+              h2.text-sm.tracking-widest.title-font.mb-1.font-medium BASIC
+              h1.text-5xl.text-gray-900.pb-4.mb-4.border-b.border-gray-200.leading-none Free
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | PassVault password manager
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Automatic Password Backup locally
+              p.flex.items-center.text-gray-600.mb-6
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Regular Updates
+              button.flex.items-center.mt-auto.text-white.bg-gray-400.border-0.py-2.px-4.w-full.rounded(class='focus:outline-none hover:bg-gray-500' onClick="buy()")
+                | Get Here
+                svg.w-4.h-4.ml-auto(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2', viewBox='0 0 24 24')
+                  path(d='M5 12h14M12 5l7 7-7 7')
+              p.text-xs.text-gray-500.mt-3 For personal or home use only.
+          .p-4.w-full(class='xl:w-1/4 md:w-1/2')
+            .h-full.p-6.rounded-lg.border-2.border-indigo-500.flex.flex-col.relative.overflow-hidden
+              span.bg-indigo-500.text-white.px-3.py-1.tracking-widest.text-xs.absolute.right-0.top-0.rounded-bl POPULAR
+              h2.text-sm.tracking-widest.title-font.mb-1.font-medium PROFESSIONAL
+              h1.text-5xl.text-gray-900.leading-none.flex.items-center.pb-4.mb-4.border-b.border-gray-200
+                span $38
+                span.text-lg.ml-1.font-normal.text-gray-500 /mo
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | All Features of Basic Edition 
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Regular Support From Blasteoroid Security Team (Limited to once per month)
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Early access to our Preview Builds and new features so that you are ready when they roll out officially
+              p.flex.items-center.text-gray-600.mb-6
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Password Recovery Support in case of forgotten Master Password or data corruption 
+              button.flex.items-center.mt-auto.text-white.bg-indigo-500.border-0.py-2.px-4.w-full.rounded(class='focus:outline-none hover:bg-indigo-600' onClick="buy()")
+                | Get Here
+                svg.w-4.h-4.ml-auto(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2', viewBox='0 0 24 24')
+                  path(d='M5 12h14M12 5l7 7-7 7')
+              p.text-xs.text-gray-500.mt-3 For users who want to get an edge above basic users or use PassVault for professional uses where data loss cannot be tolerated.
+          .p-4.w-full(class='xl:w-1/4 md:w-1/2')
+            .h-full.p-6.rounded-lg.border-2.border-gray-300.flex.flex-col.relative.overflow-hidden
+              h2.text-sm.tracking-widest.title-font.mb-1.font-medium ENTERPRISE
+              h1.text-5xl.text-gray-900.leading-none.flex.items-center.pb-4.mb-4.border-b.border-gray-200
+                span $80
+                span.text-lg.ml-1.font-normal.text-gray-500 /mo
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | All Features of Professional Edition 
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | 24 x 7 On-Call Support from our Support Team in case of any issues 
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Exclusive Access to our Nighlty builds of PassVault that are updated overnight to preview any feature change before anyone else.
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Storage of your credential data on our servers using bank-level encryption (on user's request) so that your data always remains safe
+              p.flex.items-center.text-gray-600.mb-6
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Integration of PassVault with other softwares for faster usage
+              button.flex.items-center.mt-auto.text-white.bg-gray-400.border-0.py-2.px-4.w-full.rounded(class='focus:outline-none hover:bg-gray-500' onClick="buy()")
+                | Get Here
+                svg.w-4.h-4.ml-auto(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2', viewBox='0 0 24 24')
+                  path(d='M5 12h14M12 5l7 7-7 7')
+              p.text-xs.text-gray-500.mt-3 For working enterprises needing top-notch productivity on the go.
+          .p-4.w-full(class='xl:w-1/4 md:w-1/2')
+            .h-full.p-6.rounded-lg.border-2.border-gray-300.flex.flex-col.relative.overflow-hidden
+              h2.text-sm.tracking-widest.title-font.mb-1.font-medium INDUSTRIAL / RESEARCH
+              h1.text-5xl.text-gray-900.leading-none.flex.items-center.pb-4.mb-4.border-b.border-gray-200
+                span $170
+                span.text-lg.ml-1.font-normal.text-gray-500 /mo
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | All features of Enterprise Edition
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Direct contact with our Developers 
+              p.flex.items-center.text-gray-600.mb-2
+                span.w-4.h-4.mr-2.inline-flex.items-center.justify-center.bg-gray-400.text-white.rounded-full.flex-shrink-0
+                  svg.w-3.h-3(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2.5', viewBox='0 0 24 24')
+                    path(d='M20 6L9 17l-5-5')
+                | Development of Special Exclusive features as per your needs that are not distributed to public releases
+              
+              button.flex.items-center.mt-auto.text-white.bg-gray-400.border-0.py-2.px-4.w-full.rounded(class='focus:outline-none hover:bg-gray-500' onClick="buy()")
+                | Get Here
+                svg.w-4.h-4.ml-auto(fill='none', stroke='currentColor', stroke-linecap='round', stroke-linejoin='round', stroke-width='2', viewBox='0 0 24 24')
+                  path(d='M5 12h14M12 5l7 7-7 7')
+              p.text-xs.text-gray-500.mt-3 For Large Scale Industries or for R&D purposes where special features are required.
+        

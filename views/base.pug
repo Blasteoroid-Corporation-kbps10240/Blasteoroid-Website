@@ -1,0 +1,28 @@
+html 
+    head 
+        title
+            block title 
+        
+        link(rel="stylesheet",href="../static/style.css")
+
+        block style 
+            
+    body 
+        div 
+            ul.nav 
+                li.itemsh Blasteoroid
+                li.items #[a(href="/") Home]
+                li.items #[a(href="/products") Products]
+                li.items #[a(href="#") Services]
+                li.items #[a(href="/about") About Us]
+                li.items #[a(href="/contact") Contact Us] 
+                li.items #[a(href="/join" onClick="join()") Join Us] 
+                li.items2 #[button.btn Sign Up] 
+                li.items3 #[button.btn Log In] 
+        block div 
+        footer.footer
+            p Ⓒ Blasteoroid Technologies Private Limited. All rights reserved.
+            p #[a(href="#") Terms of Usage] &nbsp;&nbsp;&nbsp;&nbsp; #[a(href="#") Privacy Policy] 
+
+    script(src="../static/index.js") 
+    
